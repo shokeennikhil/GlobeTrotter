@@ -155,7 +155,7 @@ const reviewRoutes = require('./routes/reviews');
 mongoose.set('useFindAndModify', false);
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useNewUrlParser', true);
-
+mongoose.set('useCreateIndex', true);
 
 mongoose.connect("mongodb+srv://Nikhil:Nikhil@cluster0.ayxgl.mongodb.net/Attractions?retryWrites=true&w=majority").then(() => {
 	console.log('Connected to DB!');
